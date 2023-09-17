@@ -97,3 +97,29 @@ https://github.com/facebookresearch/faiss/issues/1629:
 
 `conda install -c conda-forge faiss-gpu`
 
+
+------
+
+## training commands
+
+1. train from scratch:
+
+```bash
+CUDA_VISIBLE_DEVICES="0,1,2,3" python -m torch.distributed.launch --nproc_per_node=4 -m colbert.train --amp --doc_maxlen 512 --mask-punctuation --bsize 64 --accum 1 --triples data/train_data.tsv --root commits_exp --experiment commits_train_cont --similarity l2 --run test.l2 
+```
+
+
+1.1 [Optional] Continue training from a checkpoint:
+
+    
+```bash
+CUDA_VISIBLE_DEVICES="0,1,2,3" python -m torch.distributed.launch --nproc_per_node=4 -m colbert.train --amp --doc_maxlen 512 --mask-punctuation --bsize 64 --accum 1 --triples data/train_data.tsv --root commits_exp --experiment commits_train_cont --similarity l2 --run test.l2 --resume --checkpoint commits_exp/commits_train_cont/checkpoints/colbert-300000.dnn
+```
+
+2. indexing
+
+```bash
+python -m colbert.index_faiss \
+--index_root /root/to/indexes/ --index_name MSMARCO.L2.32x200k \
+--partitions 32768 --sample 0.3 \
+--root commits_exp --experiment commits_train
