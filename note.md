@@ -118,8 +118,37 @@ CUDA_VISIBLE_DEVICES="0,1,2,3" python -m torch.distributed.launch --nproc_per_no
 
 2. indexing
 
+Use faiss index for our task:
+
+```bash
+#### set the rank, we now use one machine with 4 GPUs
+export RANK=0
+export CUDA_VISIBLE_DEVICES="0,1,2,3"
+export MASTER_ADDR=127.0.0.1
+export MASTER_PORT=29500
+
+python -m colbert.index_faiss \
+--index_root commits_indexes --index_name train_index \
+--partitions 4715 --sample 0.3 \
+--root index_output --experiment commits_train
+```
+
 ```bash
 python -m colbert.index_faiss \
---index_root /root/to/indexes/ --index_name MSMARCO.L2.32x200k \
---partitions 32768 --sample 0.3 \
---root commits_exp --experiment commits_train
+--index_root commits_indexes --index_name train_index \
+--sample 0.3 \
+--root index_output --experiment commits_train
+```
+
+
+---
+```bash
+CUDA_VISIBLE_DEVICES="0,1,2,3" OMP_NUM_THREADS=6 \
+python -m torch.distributed.launch --nproc_per_node=4 -m \
+colbert.index --amp --doc_maxlen 512 --mask-punctuation --bsize 256 \
+--checkpoint /mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn \
+--collection /mnt/local/Baselines_Bugs/ColBERT/data/collection.tsv \
+--index_root commits_indexes --index_name train_index \
+--root index_output --experiment commits_train
+```
+

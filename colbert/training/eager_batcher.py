@@ -1,14 +1,11 @@
-import os
-import ujson
-
 from functools import partial
 from colbert.utils.utils import print_message
 from colbert.modeling.tokenization import QueryTokenizer, DocTokenizer, tensorize_triples
 
 from colbert.utils.runs import Run
-import logging
+# import logging
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s', filename='colbert_eager_batcher.log', filemode='a')
+# logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s', filename='colbert_eager_batcher.log', filemode='a')
 
 class EagerBatcher():
     def __init__(self, args, rank=0, nranks=1):
