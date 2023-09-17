@@ -141,6 +141,8 @@ python -m colbert.index_faiss \
 ```
 
 
+
+https://github.com/stanford-futuredata/ColBERT/issues/73
 ---
 ```bash
 CUDA_VISIBLE_DEVICES="0,1,2,3" OMP_NUM_THREADS=6 \
