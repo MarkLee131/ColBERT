@@ -132,7 +132,7 @@ class CollectionEncoder():
 
             batch.append(passage)
 
-            assert pid == 'id' or int(pid) == line_idx
+            assert pid == 'id' or int(pid) == line_idx, (pid, line_idx) # add the id and line_idx to assert statement
 
         return batch
 

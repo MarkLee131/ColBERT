@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/local/Baselines_Bugs/ColBERT/mlruns/0/f16b8b18732349b5a330db5b69fa47b5/artifacts
+end_time: 1695038261751
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f16b8b18732349b5a330db5b69fa47b5
+run_name: puzzled-shrimp-10
+run_uuid: f16b8b18732349b5a330db5b69fa47b5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695038261710
+status: 4
+tags: []
+user_id: kaixuan_cuda11

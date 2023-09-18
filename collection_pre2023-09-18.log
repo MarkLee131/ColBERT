@@ -1,0 +1,18 @@
+2023-09-18 12:04:02,513 - root - INFO - Starting to process query file: /mnt/local/Baselines_Bugs/ColBERT/data/queries_train.tsv
+2023-09-18 12:04:02,531 - root - INFO - Processed /mnt/local/Baselines_Bugs/ColBERT/data/queries_train.tsv. Shape: (3782, 2)
+2023-09-18 12:04:02,531 - root - INFO - Starting to process query file: /mnt/local/Baselines_Bugs/ColBERT/data/queries_validate.tsv
+2023-09-18 12:04:02,535 - root - INFO - Processed /mnt/local/Baselines_Bugs/ColBERT/data/queries_validate.tsv. Shape: (478, 2)
+2023-09-18 12:04:02,535 - root - INFO - Starting to process query file: /mnt/local/Baselines_Bugs/ColBERT/data/queries_test.tsv
+2023-09-18 12:04:02,539 - root - INFO - Processed /mnt/local/Baselines_Bugs/ColBERT/data/queries_test.tsv. Shape: (478, 2)
+2023-09-18 12:04:02,540 - root - INFO - Combined all queries files. Shape before deduplication: (4738, 2)
+2023-09-18 12:04:02,546 - root - INFO - Shape after deduplication: (4724, 2)
+2023-09-18 12:04:02,580 - root - INFO - Saved combined queries to queries_all.tsv
+2023-09-18 12:04:02,580 - root - INFO - Starting to process collection file: /mnt/local/Baselines_Bugs/ColBERT/data/collection_train.tsv
+2023-09-18 12:05:13,352 - root - INFO - Processed /mnt/local/Baselines_Bugs/ColBERT/data/collection_train.tsv. Shape: (1338620, 2)
+2023-09-18 12:05:13,352 - root - INFO - Starting to process collection file: /mnt/local/Baselines_Bugs/ColBERT/data/collection_validate.tsv
+2023-09-18 12:05:38,081 - root - INFO - Processed /mnt/local/Baselines_Bugs/ColBERT/data/collection_validate.tsv. Shape: (410608, 2)
+2023-09-18 12:05:38,082 - root - INFO - Starting to process collection file: /mnt/local/Baselines_Bugs/ColBERT/data/collection_test.tsv
+2023-09-18 12:05:55,541 - root - INFO - Processed /mnt/local/Baselines_Bugs/ColBERT/data/collection_test.tsv. Shape: (397721, 2)
+2023-09-18 12:05:55,609 - root - INFO - Combined all collection files. Shape before deduplication: (2146949, 2)
+2023-09-18 12:06:25,402 - root - INFO - Shape after deduplication: (1457423, 2)
+2023-09-18 12:08:54,204 - root - INFO - Saved combined collection to collection_all.tsv

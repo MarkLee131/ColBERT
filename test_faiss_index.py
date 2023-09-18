@@ -32,7 +32,7 @@ python -m colbert.index_faiss \
 '''
 import subprocess
 subprocess.run(["python", "-m", "colbert.index_faiss",
-                "--index_root", "/mnt/local/Baselines_Bugs/ColBERT/index_output",
+                "--index_root", "/mnt/local/Baselines_Bugs/ColBERT/commits_indexes",
                 "--index_name", "train_index",
                 "--partitions", "4715",
                 "--sample", "0.3",

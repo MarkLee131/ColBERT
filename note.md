@@ -147,10 +147,39 @@ https://github.com/stanford-futuredata/ColBERT/issues/73
 ```bash
 CUDA_VISIBLE_DEVICES="0,1,2,3" OMP_NUM_THREADS=6 \
 python -m torch.distributed.launch --nproc_per_node=4 -m \
-colbert.index --amp --doc_maxlen 512 --mask-punctuation --bsize 256 \
+colbert.index --amp --doc_maxlen 512 --mask-punctuation --bsize 512 \
 --checkpoint /mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn \
---collection /mnt/local/Baselines_Bugs/ColBERT/data/collection.tsv \
---index_root commits_indexes --index_name train_index \
+--collection /mnt/local/Baselines_Bugs/ColBERT/data/collection_all.tsv \
+--index_root /mnt/local/Baselines_Bugs/ColBERT/commits_indexes --index_name train_index \
 --root index_output --experiment commits_train
 ```
+
+```bash
+CUDA_VISIBLE_DEVICES="0,1,2,3" OMP_NUM_THREADS=6 \
+python -m torch.distributed.launch --nproc_per_node=4 -m \
+colbert.index --amp --doc_maxlen 512 --mask-punctuation --bsize 1024 \
+--checkpoint /mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn \
+--collection /mnt/local/Baselines_Bugs/ColBERT/data/collection_all.tsv \
+--index_root /mnt/local/Baselines_Bugs/ColBERT/commits_indexes --index_name train_index \
+--root index_output --experiment commits_train
+
+```
+
+
+
+
+
+```bash
+export RANK=0 \
+export CUDA_VISIBLE_DEVICES="0,1,2,3" \
+export MASTER_ADDR=127.0.0.1 \
+export MASTER_PORT=29501 
+python -m colbert.index_faiss \
+--index_root /mnt/local/Baselines_Bugs/ColBERT/commits_indexes --index_name train_index \
+--partitions 4715 --sample 0.3 \
+--root index_output --experiment commits_train
+```
+
+
+
 
