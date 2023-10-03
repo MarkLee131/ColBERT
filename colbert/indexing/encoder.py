@@ -125,10 +125,13 @@ class CollectionEncoder():
             pid, passage, *other = line_parts
 
             assert len(passage) >= 1
+            if passage.strip == '':
+                print('passage is empty')
+                passage = 'aaa'
 
-            if len(other) >= 1:
-                title, *_ = other
-                passage = title + ' | ' + passage
+            # if len(other) >= 1:
+            #     title, *_ = other
+            #     passage = title + ' | ' + passage
 
             batch.append(passage)
 

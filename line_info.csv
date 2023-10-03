@@ -1,0 +1,649 @@
+repo,line_number
+ARMmbed_mbedtls,[100 100 100 100]
+AXDOOMER_doom-vanille,[100]
+AcademySoftwareFoundation_openexr,[100 100 100 100 100 100 100]
+ArtifexSoftware_jbig2dec,[100]
+CESNET_libyang,[100 100 100 100 100 100 100 100 100 100]
+ClusterLabs_pacemaker,[100 100 100 100]
+DanBloomberg_leptonica,[100 100 100 100 100 100]
+Ettercap_ettercap,[100 100 100]
+Exim_exim,[100 100 100]
+Exiv2_exiv2,[100 100 100]
+FFmpeg_FFmpeg,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100]"
+01org_opa-fm,[61]
+01org_tpm2.0-tools,[100]
+389ds_389-ds-base,[30]
+AOMediaCodec_libavif,[24]
+AndreRenaud_PDFGen,[100]
+AntonKueltz_fastecdsa,[61]
+Ardour_ardour,[100]
+ArtifexSoftware_ghostpdl,[100]
+ArtifexSoftware_mupdf,[12]
+AttorneyOnline_akashi,[92]
+BelledonneCommunications_belle-sip,[100 100]
+BelledonneCommunications_bzrtp,[36]
+Blosc_c-blosc2,[100]
+CDrummond_cantata,[100 100 100]
+CauldronDevelopmentLLC_cbang,[24]
+ClusterLabs_booth,[23]
+DPDK_dpdk,[100 100]
+DaveGamble_cJSON,[60 64]
+Dieterbe_uzbl,[100]
+Duncaen_OpenDoas,[100]
+FRRouting_frr,[74 82]
+FransUrbo_zfs,[100]
+FreeRADIUS_freeradius-server,[79]
+FreeRADIUS_pam_radius,[100]
+FreeRDP_FreeRDP,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100]"
+FreeRTOS_FreeRTOS-Kernel,[100 100 100]
+GNOME_evince,[10]
+GNOME_gimp,[23]
+GNOME_gnome-session,[46]
+GNOME_libgsf,[100]
+GNOME_librsvg,[100]
+GNOME_libxml2,[18 21 24]
+GNOME_nautilus,[24]
+GNUAspell_aspell,[100]
+GStreamer_gst-plugins-ugly,[100]
+ImageMagick_ImageMagick,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100]"
+ImageMagick_ImageMagick6,[88 88 88 96 88 88 96 96]
+ImageMagick_librsvg,[35]
+ImpulseAdventure_JPEGsnoop,[43]
+Jabberd2_jabberd2,[45]
+JonMagon_KDiskMark,[51]
+KDE_ark,[55]
+KDE_kde1-kdebase,[100]
+KDE_kdeconnect-kde,[94]
+LINBIT_csync2,[100]
+LawnGnome_php-radius,[87]
+LibRaw_LibRaw,[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100]
+LibRaw_LibRaw-demosaic-pack-GPL2,[48 48]
+LibVNC_libvncserver,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100]"
+LibVNC_x11vnc,[13]
+LibreDWG_libredwg,[100 100 100 100 100 100]
+LoicMarechal_libMeshb,[82]
+MariaDB_server,[100 100 100 100 100]
+Microsoft_ChakraCore,[51 48 48]
+Mindwerks_wildmidi,[100  96]
+MisterTea_EternalTerminal,[98 88]
+Monetra_mstdlib,[74]
+NLnetLabs_ldns,[34]
+NagiosEnterprises_nagioscore,[39]
+NeoRaider_fastd,[100]
+NetHack_NetHack,[100]
+OISF_suricata,[16 16 16 12]
+OSGeo_gdal,[84 84 84 84]
+OpenMPT_openmpt,[21 21 21]
+OpenPrinting_cups,[46]
+OpenRC_openrc,[100]
+OpenSC_OpenSC,"[100 100 100 100  75  50  75 100  50  50  50 100 100 100 100 100 100 100
+  75  50 100 100  75 100  50]"
+OpenSC_pam_p11,[100]
+OpenSIPS_opensips,[37]
+OpenVPN_openvpn,[18 21  9]
+PCRE2Project_pcre2,[100 100]
+Perl_perl5,[39 42 39]
+PowerDNS_pdns,[82 86]
+Quagga_quagga,[44]
+SELinuxProject_selinux,[12 12 12 12]
+SchedMD_slurm,[99]
+SerenityOS_serenity,[20 20]
+Singular_Singular,[14]
+SpiderLabs_ModSecurity,[30]
+ThomasDickey_lynx-snapshots,[100]
+ThomasDickey_xterm-snapshots,[100]
+TryGhost_node-sqlite3,[100]
+TurboVNC_turbovnc,[80]
+TykTechnologies_tyk-identity-broker,[28]
+Uninett_mod_auth_mellon,[4]
+ValveSoftware_GameNetworkingSockets,[52 56 52 52]
+Venemo_node-lmdb,[100]
+VirusTotal_yara,[100 100 100 100 100 100 100 100 100]
+WAVM_WAVM,[34]
+YanVugenfirer_kvm-guest-drivers-windows,[100]
+Yeraze_ytnef,[57 45 59]
+Yubico_libu2f-host,[19]
+Yubico_pam-u2f,[22 22]
+Yubico_yubico-pam,[60]
+aawc_unrar,[20]
+abrt_abrt,[100 100  48  72  54  42]
+fwupd_fwupd,[28]
+abrt_libreport,[15 15 15]
+acassen_keepalived,[ 90 100]
+adaptivecomputing_torque,[30]
+adrienverge_openfortivpn,[24 24 24]
+akheron_jansson,[22]
+akrennmair_newsbeuter,[34 34]
+alandekok_freeradius-server,[100 100 100 100]
+alanxz_rabbitmq-c,[34]
+albertodemichelis_squirrel,[26 26]
+ambiot_amb1_sdk,[40]
+android_platform_bionic,[100]
+antirez_redis,[100 100 100 100 100 100 100]
+antlarr_audiofile,[5 5 5 5 5]
+apache_httpd,[9 9 9 9 9 9 9 9 9]
+apple_cups,[42 42]
+appneta_tcpreplay,[37]
+aquynh_capstone,[ 90 100]
+arangodb_arangodb,[100 100]
+arnoldaldrin_binaries,[10]
+atheme_atheme,[100 100  78]
+atheme_charybdis,[41]
+att_ast,[18]
+autotrace_autotrace,[100]
+avast_retdec,[100]
+babelouest_glewlwyd,[100 100 100 100]
+babelouest_rhonabwy,[100]
+babelouest_ulfius,[23]
+bagder_curl,[90 87 87]
+behdad_harfbuzz,[94]
+bfabiszewski_libmobi,[33 33 33 33 22 22 33 33]
+bitlbee_bitlbee,[42 44]
+bittorrent_bootstrap-dht,[100 100]
+blueness_sthttpd,[53]
+bluez_bluez,[ 12 100  43]
+bminor_bash,[100]
+bminor_glibc,[11]
+bonzini_qemu,[100]
+boothj5_profanity,[54]
+bratsche_pango,[100]
+brave_brave-core,[55]
+brianmario_yajl-ruby,[24]
+bro_bro,[100 100 100 100]
+cacalabs_libcaca,[100]
+canarymail_mailcore2,[49]
+ccxvii_mujs,[16 16 16 16]
+ceph_ceph,[10 10 10 10 10]
+cesanta_mongoose,[100 100 100]
+cherokee_webserver,[21]
+cisco_thor,[100]
+civetweb_civetweb,[100]
+ckolivas_cgminer,[40 38]
+ckolivas_lrzip,[100]
+cloudbase_ovs,[100]
+cloudendpoints_esp,[100]
+collectd_collectd,[100 100]
+containers_crun,[100]
+coreboot_coreboot,[100]
+coreos_ignition,[15]
+coreutils_gnulib,[24]
+corosync_corosync,[100]
+coturn_coturn,[89]
+crawl_crawl,[28]
+curl_curl,[ 16  16  24 100  16  40  16  16]
+cyrusimap_cyrus-imapd,[68 70]
+dajobe_raptor,[24]
+darold_squidclamav,[41]
+davea42_libdwarf-code,[58 62]
+davidben_nspluginwrapper,[100]
+dbry_WavPack,[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100]
+derf_feh,[20]
+dinhviethoa_libetpan,[30]
+dlitz_pycrypto,[13]
+docker_docker-credential-helpers,[100]
+domoticz_domoticz,[100 100]
+dosfstools_dosfstools,[100 100]
+dovecot_core,[98 56]
+drogonframework_drogon,[30]
+dropbox_lepton,[20 88]
+e2guardian_e2guardian,[100]
+electron_electron,[100  90 100]
+elric1_knc,[100]
+enferex_pdfresurrect,[ 99 100]
+ensc_irssi-proxy,[100]
+envoyproxy_envoy,[14 14 14 14 14 14 14 14 14 14 14 14 14 14]
+erikd_libsndfile,[100 100 100 100 100 100 100]
+erlang_otp,[32]
+esl_MongooseIM,[73]
+esnet_iperf,[30]
+espruino_Espruino,[100 100 100 100 100 100 100 100 100 100]
+evilnet_nefarious2,[100]
+gisle_html-parser,[100]
+facebook_fbthrift,[4 4 4 4]
+facebook_folly,[100  99 100]
+facebook_hermes,[8 8 8 8 8 8 8 8]
+facebook_hhvm,"[42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42
+ 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42]"
+facebook_mcrouter,[100]
+facebook_proxygen,[5 5 5 5 5]
+facebook_wangle,[100]
+facebookincubator_fizz,[100 100]
+facebookincubator_mvfst,[100]
+fatcerberus_minisphere,[100]
+file_file,"[100 100 100  22 100 100 100 100 100 100 100  66 100 100 100 100 100 100
+ 100  22]"
+flatpak_flatpak,[100 100 100 100 100 100]
+flexpaper_pdf2json,[18]
+flori_json,[30]
+fluent_fluent-bit,[100 100]
+fmtlib_fmt,[100]
+fontforge_fontforge,[49]
+foxcpp_maddy,[27]
+fragglet_lhasa,[100]
+freedesktop_xorg-xserver,[37]
+freeswitch_sofia-sip,[30 30 30]
+fribidi_fribidi,[100 100]
+fwdillema_totd,[7]
+git_git,[20 10 20 20 20]
+github_cmark-gfm,[74 80]
+github_trilogy,[63]
+glennrp_libpng,[92]
+glensc_file,[100]
+google_asylo,[16 16 16 16 16 16 32 16 16 16 16 16 16 16 16 16]
+googlei18n_sfntly,[74 66]
+gopro_gpmf-parser,[100 100 100]
+gpac_gpac,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100]"
+gpg_libgcrypt,[100]
+gsliepen_tinc,[100]
+gssapi_gssproxy,[100]
+h2o_h2o,[100  76]
+haakonnessjoen_MAC-Telnet,[100]
+haproxy_haproxy,[100]
+harfbuzz_harfbuzz,[97]
+heimdal_heimdal,[16 16 16 16]
+hexchat_hexchat,[100]
+hfp_libxsmm,[76 76]
+hoene_libmysofa,[100 100 100]
+hpjansson_chafa,[100 100 100]
+igrr_axtls-8266,[18 18 18]
+illumos_illumos-gate,[36 36 36]
+inliniac_suricata,[8]
+inspircd_inspircd,[ 96 100 100 100  96  96  96 100]
+ioquake_ioq3,[57]
+iortcw_iortcw,[100]
+irssi_irssi,[100 100 100 100]
+istio_envoy,[100]
+ivmai_bdwgc,[100]
+jabberd2_jabberd2,[47]
+jcupitt_libvips,[100]
+jedisct1_pure-ftpd,[95 90 90 95 90]
+jenkinsci_jenkins,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100]"
+jktjkt_trojita,[89]
+joyent_node,[3]
+jpirko_libndp,[80]
+jsummers_deark,[100 100]
+jsummers_imageworsener,[27 27 27 27 27 27 27 27 27]
+kamailio_kamailio,[100]
+karelzak_util-linux,[56 60 56 56]
+keepkey_keepkey-firmware,[100 100 100 100]
+keszybz_systemd,[34]
+khaledhosny_ots,[72]
+kkos_oniguruma,[40 40 40 40 50 50 40 40 40 40]
+kmackay_micro-ecc,[95]
+kmatheussen_das_watchdog,[13]
+kn007_silk-v3-decoder,[88]
+knik0_faad2,[72 33 33]
+kohler_gifsicle,[11]
+kovidgoyal_kitty,[50]
+kr_beanstalkd,[100]
+kravietz_pam_tacplus,[100 100]
+krb5_krb5,"[40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40
+ 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40]"
+kyz_libmspack,[100 100 100 100 100 100 100 100]
+landfillbaby_png2webp,[100]
+latchset_mod_auth_mellon,[100]
+latchset_tang,[100]
+laverdet_isolated-vm,[100]
+lavv17_lftp,[13]
+leesavide_abcm2ps,[30 21 27]
+libarchive_libarchive,"[100 100 100 100 100 100  20 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100]"
+libass_libass,[44 77]
+libav_libav,[100 100 100]
+libexif_exif,[100]
+libexif_libexif,[45 10 45 40 60]
+libexpat_libexpat,[100]
+libgd_libgd,[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100]
+libgit2_libgit2,[100 100 100 100 100 100 100 100 100]
+libguestfs_hivex,[100 100]
+libguestfs_libguestfs,[100]
+libidn_libidn2,[100]
+libimobiledevice_libplist,[100 100 100 100 100]
+libimobiledevice_libusbmuxd,[100]
+libjxl_libjxl,[16]
+liblouis_liblouis,[100 100]
+libming_libming,[ 99 100 100]
+libofx_libofx,[14]
+libreswan_libreswan,[96 99 93]
+libtom_libtomcrypt,[39]
+libuv_libuv,[100]
+libvips_libvips,[100 100 100]
+libvirt_libvirt,[100 100]
+libxmljs_libxmljs,[61]
+libyal_libevt,[100]
+lighttpd_lighttpd1.4,[58 58]
+linux4sam_at91bootstrap,[22 22]
+linuxdeepin_deepin-clone,[12 12 12 12]
+litespeedtech_lsquic,[100]
+liyansong2018_elfspirit,[47]
+lua_lua,[ 90  63  99  62 100 100  99  99 100]
+lurcher_unixODBC,[100]
+lxc_lxc,[5 5 5 5 5]
+lxc_lxcfs,[100 100]
+m6w6_ext-http,[ 90 100]
+madler_pigz,[100]
+madler_zlib,[5 5 5 5 5]
+maekitalo_tntnet,[100]
+mapserver_mapserver,[62 62]
+mdadams_jasper,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100]"
+memcached_memcached,[42 42 42 42 42 42]
+merbanan_rtl_433,[100 100]
+michaelforney_samurai,[100 100]
+michaelrsweet_htmldoc,[33 36 33]
+milkytracker_MilkyTracker,[28 28]
+minetest_minetest,[ 96 100 100]
+miniupnp_miniupnp,[100 100 100 100 100 100 100 100 100 100]
+miniupnp_ngiflib,[100 100 100 100]
+mintty_mintty,[100]
+mity_md4c,[100]
+mjg59_linux,[12 12 12]
+mjg59_pupnp-code,[100]
+mkj_dropbear,[37]
+mltframework_shotcut,[42]
+mm2_Little-CMS,[52 56 56 56]
+mongodb_mongo,[32 32]
+mongodb_mongo-c-driver,[54]
+mongodb_mongo-python-driver,[12]
+monkey_monkey,[22 22]
+mono_mono,[66 30 30 42 48 60]
+moodle_moodle,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100]"
+mruby_mruby,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100]"
+mtrojnar_stunnel,[100]
+muttmua_mutt,[17]
+mymarilyn_clickhouse-driver,[100]
+mysql_mysql-server,[100 100 100]
+nanopb_nanopb,[48 51 51]
+ned14_nedmalloc,[100]
+neomutt_neomutt,[100  90  90 100 100  90 100 100  90  90 100  90  90  90  90 100 100 100]
+netblue30_firejail,[100 100 100 100]
+netdata_netdata,[77]
+neutrinolabs_xrdp,[100 100]
+nghttp2_nghttp2,[24]
+nginx_nginx,[100 100]
+nginx_njs,[16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16]
+nothings_stb,[100 100 100 100 100 100 100 100]
+ntop_nDPI,[100 100 100 100 100 100 100 100]
+ntop_ntopng,[100 100]
+objsys_oocborrt,[21]
+ocaml_ocaml,[63]
+oetiker_rrdtool-1.x,[42]
+ohler55_agoo,[100]
+open5gs_open5gs,[64 56 68 52]
+open62541_open62541,[92]
+openSUSE_libsolv,[100]
+openbsd_src,[60 48 48 48 48 48 48 48 48 48 48 48]
+opencontainers_runc,[100 100]
+opencryptoki_opencryptoki,[100]
+opencv_opencv,[80]
+openenclave_openenclave,[69]
+openresty_lua-nginx-module,[38]
+openscad_openscad,[100]
+openssh_openssh-portable,[100 100 100 100 100 100 100]
+openssl_openssl,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100]"
+openthread_openthread,[32]
+openvswitch_ovs,[5 5 5 5 5]
+openzfs_zfs,[100 100]
+oracle_linux-uek,[100]
+osquery_osquery,[80]
+owntone_owntone-server,[100]
+paulej_AESCrypt,[54]
+paulusmack_ppp,[ 72 100]
+pbatard_rufus,[100]
+pcmacdon_jsish,[100 100 100]
+pediapress_pyfribidi,[28]
+perl_perl5,[24 24 24]
+pgbouncer_pgbouncer,[57 35]
+phaag_nfdump,[100]
+php_php-src,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100]"
+phpmyadmin_phpmyadmin,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100  81 100
+ 100 100 100 100 100  86 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100  87 100 100 100 100
+ 100 100 100 100 100]"
+phusion_passenger,[100 100 100 100]
+piastry_cifs-utils,[100]
+pingidentity_mod_auth_openidc,[100]
+pixelb_coreutils,[22 22]
+pjsip_pjproject,[68 68 68 68 68 34 68 68 68 68 51 85 51 68 68 34 68]
+plougher_squashfs-tools,[16 16 16 16]
+plutinosoft_Platinum,[100]
+polarssl_polarssl,[71]
+pornel_pngquant,[100]
+postgres_postgres,[20 20 20  5 20]
+proftpd_proftpd,[15]
+projectacrn_acrn-hypervisor,[100 100 100]
+projectatomic_bubblewrap,[100 100]
+pts_sam2p,[100]
+puma_puma,[100]
+pupnp_pupnp,[22]
+python_cpython,[100]
+python_typed_ast,[100 100]
+qbittorrent_qBittorrent,[68 74]
+qemu_qemu,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100]"
+qpdf_qpdf,[24 24 24 24 24 24]
+qt_qtbase,[90]
+qt_qtsvg,[100]
+quassel_quassel,[ 60 100 100  90  30]
+radare_radare2,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100]"
+radareorg_radare2,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100]"
+randombit_botan,[100 100]
+rawstudio_rawstudio,[100 100]
+rdesktop_rdesktop,[57 74 76 57 57 57 57 57 57 57 57 57 76 57 57 76 57 57 57]
+reddit_snudown,[40]
+redis_hiredis,[40]
+redis_redis,[100 100 100 100 100 100 100 100 100 100]
+relan_exfat,[100]
+resiprocate_resiprocate,[100]
+reubenhwk_radvd,[100]
+rizinorg_rizin,[100 100 100 100 100 100 100]
+roehling_postsrsd,[20 20]
+rsyslog_rsyslog,[100 100 100]
+ruby_openssl,[100]
+ruby_ruby,[42 46]
+ruven_iipsrv,[12]
+sass_libsass,[75]
+sctplab_usrsctp,[69]
+scylladb_scylladb,[100]
+sddm_sddm,[ 96 100]
+shadowsocks_shadowsocks-libev,[100]
+shellinabox_shellinabox,[100]
+silnrsi_graphite,[38]
+simsong_tcpflow,[27]
+sipa_bitcoin,[61]
+skalenetwork_sgxwallet,[100 100]
+skvadrik_re2c,[100]
+sleuthkit_sleuthkit,[100 100 100]
+slicer69_doas,[44 44]
+snapcore_snapd,[99]
+solokeys_solo,[100]
+sonicdoe_detect-character-encoding,[100 100]
+sparklemotion_nokogiri,[100 100]
+sprinfall_webcc,[68]
+sqlcipher_sqlcipher,[45]
+sqlite_sqlite,[14 14 14 14 14 14 14 14 14 14 14 14 14 14]
+sroracle_abuild,[100]
+sshock_AFFLIBv3,[100]
+stedolan_jq,[100]
+stefanberger_libtpms,[100]
+stefanberger_swtpm,[100]
+stefanesser_suhosin,[100]
+stephane_libmodbus,[84 81 81]
+stnoonan_spnego-http-auth-nginx-module,[72]
+stoth68000_media-tree,[100]
+strukturag_libde265,[25]
+strukturag_libheif,[96 66 96]
+swaywm_swaylock,[100]
+swoole_swoole-src,[100]
+symless_synergy-core,[100]
+systemd_systemd,[100 100 100 100 100 100 100 100]
+szukw000_openjpeg,[ 72 100 100 100]
+taglib_taglib,[84 92 84 88]
+tats_w3m,[100 100 100 100 100]
+tbeu_matio,[20 20]
+tcltk_tcl,[100]
+teeworlds_teeworlds,[100 100 100]
+tensorflow_tensorflow,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100]"
+tensorflow_tflite-micro,[100]
+thorfdbg_libjpeg,[25 25 25 25 30]
+tildearrow_furnace,[100]
+tillkamppeter_ippusbxd,[100]
+tmux_tmux,[78]
+torproject_tor,[75 10  5  5 10]
+torvalds_linux,[100 100 100 ... 100 100 100]
+transmission_transmission,[100]
+trgil_gilcc,[28]
+troglobit_ssdp-responder,[100]
+troglobit_uftpd,[100 100]
+uWebSockets_uWebSockets,[100]
+ucbrise_opaque,[21]
+uclouvain_openjpeg,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100]"
+ueno_libfep,[98]
+ultrajson_ultrajson,[100 100]
+ultravnc_UltraVNC,[100]
+umlaeute_v4l2loopback,[30]
+unbit_uwsgi,[51]
+univention_univention-corporate-server,[25]
+unrealircd_unrealircd,[100]
+upx_upx,[48 30 24 42 36 34]
+vadz_libtiff,[23 23 23 23 23 23 23 23 23 23 23 46 23 46 23 23 23 23 23 23 46 46 23]
+varnish_Varnish-Cache,[1]
+varnishcache_varnish-cache,[28 36]
+veracrypt_VeraCrypt,[100]
+veyon_veyon,[24]
+vgropp_bwm-ng,[100]
+viabtc_viabtc_exchange_server,[69 66 69]
+videolan_vlc,[81 17 38 36  6 36]
+vim_vim,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100]"
+vincentbernat_lldpd,[51 34]
+vmg_redcarpet,[45]
+vrtadmin_clamav-devel,[54 63 63]
+vslavik_winsparkle,[34]
+weechat_weechat,[70 60 60 85 60]
+weidai11_cryptopp,[100 100]
+wesnoth_wesnoth,[100 100]
+wez_atomicparsley,[81]
+winscp_winscp,[12 12]
+wireapp_wire-avs,[100]
+wireshark_wireshark,"[100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+ 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100]"
+wolfSSL_wolfMQTT,[21 21 21 21 21 21 21]
+wolfSSL_wolfssl,[100 100 100 100 100 100 100]
+xbmc_xbmc,[74]
+xelerance_Openswan,[46]
+xkbcommon_libxkbcommon,[20 30 20 20 20 20 20 30 30 20]
+yast_yast-core,[68]
+yhirose_cpp-peglib,[100 100]
+yoe_nbd,[30 30]
+z3APA3A_3proxy,[100]
+zcash_zcash,[54]
+zhaozg_lua-openssl,[30 42 42]
+zherczeg_jerryscript,[100]
+zmartzone_mod_auth_openidc,[100 100 100 100 100 100 100 100]
+znc_znc,[100 100 100 100 100 100 100]
+zyantific_zydis,[29]

@@ -167,7 +167,7 @@ colbert.index --amp --doc_maxlen 512 --mask-punctuation --bsize 1024 \
 
 
 
-
+---
 
 ```bash
 export RANK=0 \
@@ -175,11 +175,45 @@ export CUDA_VISIBLE_DEVICES="0,1,2,3" \
 export MASTER_ADDR=127.0.0.1 \
 export MASTER_PORT=29501 
 python -m colbert.index_faiss \
---index_root /mnt/local/Baselines_Bugs/ColBERT/commits_indexes --index_name train_index \
---partitions 4715 --sample 0.3 \
---root index_output --experiment commits_train
+--index_root /mnt/local/Baselines_Bugs/ColBERT/faiss_indexes --index_name train_index \
+ --sample 0.3 \
+--root faiss_output \
+--experiment commits_train #\
+# --partitions 4715 
 ```
 
 
 
 
+
+--- for retrieval
+
+```bash
+export RANK=0 \
+export CUDA_VISIBLE_DEVICES="0,1,2,3" \
+export MASTER_ADDR=127.0.0.1 \
+export MASTER_PORT=29500
+
+python -m colbert.retrieve \
+--amp --doc_maxlen 512 --query_maxlen 512 --mask-punctuation --bsize 1024 \
+--queries /mnt/local/Baselines_Bugs/ColBERT/data/queries_all.tsv \
+--nprobe 32 --partitions 4715 --faiss_depth 1024 \
+--depth 100000 \
+--index_root /mnt/local/Baselines_Bugs/ColBERT/commits_indexes --index_name train_index \
+--checkpoint /mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn \
+--root retrieve_output_100000 --experiment commits_train
+```
+
+--- rerank
+
+```bash
+python -m colbert.rerank \
+--root rerank_output --experiment commits_train \
+--amp --bsize 256 \
+--query_maxlen 512 --doc_maxlen 512 --mask-punctuation \
+--checkpoint /mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn \
+--topk 100 \
+--index_root /mnt/local/Baselines_Bugs/ColBERT/commits_indexes --index_name train_index \
+--queries /mnt/local/Baselines_Bugs/ColBERT/data/queries_all.tsv \
+--collection /mnt/local/Baselines_Bugs/ColBERT/data/collection_all.tsv
+```

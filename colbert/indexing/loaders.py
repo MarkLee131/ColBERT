@@ -8,8 +8,8 @@ from colbert.utils.utils import print_message
 
 
 def get_parts(directory):
-    # extension = '.pt'
-    extension = '.tsv'
+    extension = '.pt'
+    # extension = '.tsv'
 
     parts = sorted([int(filename[: -1 * len(extension)]) for filename in os.listdir(directory)
                     if filename.endswith(extension)])

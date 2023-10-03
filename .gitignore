@@ -1,6 +1,10 @@
 data/
 logs/
 commits_indexes/
+run/
+run_index/
+mlruns/
+retrieve_output/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

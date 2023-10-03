@@ -88,8 +88,8 @@ class Logger():
     def warn(self, *args):
         msg = print_message('[WARNING]', '\t', *args)
 
-        with open(os.path.join(self.logs_path, 'warnings.txt'), 'a') as output_metadata:
-            output_metadata.write(msg + '\n\n\n')
+        # with open(os.path.join(self.logs_path, 'warnings.txt'), 'a') as output_metadata:
+        #     output_metadata.write(msg + '\n\n\n')
 
     def info_all(self, *args):
         print_message('[' + str(self.rank) + ']', '\t', *args)
