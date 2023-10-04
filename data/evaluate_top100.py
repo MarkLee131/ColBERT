@@ -5,7 +5,7 @@ TOP100_DIR = '/mnt/local/Baselines_Bugs/ColBERT/data/top100'
 
 def calculate_metrics():
     '''
-    Calculate the recall, MRR, and Manual efforts
+    Calculate the Recall, MRR, and Manual efforts
     '''
     
     ranks = []

@@ -68,7 +68,6 @@ if __name__=='__main__':
     # run_retrive(topk=5000)
     
     # run_retrive(topk=50000)
-    
-    run_retrive(topk=500000)
+
     
     # run_retrive(topk=1000000)

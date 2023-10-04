@@ -1,5 +1,0 @@
-2023-09-20 09:55:16,421 - root - INFO - Processing file: /mnt/local/Baselines_Bugs/ColBERT/data/test_data.csv
-2023-09-20 09:56:26,666 - root - INFO - Memory usage reduced
-2023-09-20 09:56:57,635 - root - INFO - combined column processed with columns: Index(['cid', 'combined'], dtype='object')
-2023-09-20 09:56:57,636 - root - INFO - msg_token and diff_token columns deleted
-2023-09-20 09:57:30,786 - root - INFO - collection.tsv saved
