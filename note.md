@@ -217,3 +217,17 @@ python -m colbert.rerank \
 --queries /mnt/local/Baselines_Bugs/ColBERT/data/queries_all.tsv \
 --collection /mnt/local/Baselines_Bugs/ColBERT/data/collection_all.tsv
 ```
+
+
+
+
+## Train codebert for ColBERT
+
+### train
+
+```bash
+CUDA_VISIBLE_DEVICES="0,1,2,3" \
+OMP_NUM_THREADS=6\
+python -m torch.distributed.launch --nproc_per_node=4 -m colbert.train --amp --doc_maxlen 128 --mask-punctuation --bsize 128 --accum 1 --triples data/train_data_triplets.tsv --root codebert_train --experiment commits_train 
+--similarity l2 --run test.l2 
+```

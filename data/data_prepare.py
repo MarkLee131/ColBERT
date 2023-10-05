@@ -3,11 +3,12 @@ from tqdm import tqdm
 import numpy as np
 from datetime import datetime
 
-'''
-get the triplets tsv from the train_data.csv
-'''
+
 
 def process_csv_to_tsv(input_filename, output_filename):
+    '''
+    get the triplets tsv from the train_data.csv
+    '''
     
     start = datetime.now()
     
@@ -43,6 +44,7 @@ def process_csv_to_tsv(input_filename, output_filename):
         desc_token = group['desc_token'].iloc[0]
         pos_rows = group[group['label'] == 1]
         neg_rows = group[group['label'] == 0]
+        # neg_rows = neg_rows[:min(len(neg_rows), 5000-len(pos_rows))]        
         neg_rows['combined'] = neg_rows['msg_token'] + " " + neg_rows['diff_token']
         
         for _, pos_row in pos_rows.iterrows():
@@ -113,11 +115,12 @@ def reduce_mem_usage(df, verbose=True):
     return df
 
 if __name__ == '__main__':
-    
+    import os
     # Call the function for each of the three files
+    save_dir = '/mnt/local/Baselines_Bugs/ColBERT/data/'
     # process_csv_to_tsv('test_data.csv', 'test_data.tsv')
-    process_csv_to_tsv('validate_data.csv', 'validate_data.tsv')
-    # process_csv_to_tsv('train_data.csv', 'train_data.tsv')
+    # process_csv_to_tsv('validate_data.csv', 'validate_data.tsv')
+    process_csv_to_tsv(os.path.join(save_dir, 'train_data.csv'), os.path.join(save_dir, 'train_data_triplets.tsv'))
     
 ''' 
 CUDA_VISIBLE_DEVICES="0,1,2,3" \
@@ -125,12 +128,4 @@ python -m torch.distributed.launch --nproc_per_node=4 -m \
 colbert.train --amp --doc_maxlen 180 --mask-punctuation --bsize 256 --accum 1 \
 --triples data/train_data.tsv \
 --root commits_exp --experiment commits_train --similarity l2 --run test.l2
-'''
-
-'''
-python -m colbert.index_faiss \
---index_root root_index --index_name commits_index \
---partitions 32768 --sample 0.3 \
---root root_train --experiment commits
-
 '''

@@ -92,7 +92,7 @@ def collect_top100(
     # now the ranking has columns: qid, pid, rank, desc_token, commits, owner, repo, commit_id
     
     
-    ### kr: merge cve back based on desc_token
+    ###  new: merge cve back based on desc_token
     query_cve_df = pd.read_csv(os.path.join(QUERY_CVE_DIR, repo_name+'.csv'))
     reduce_mem_usage(query_cve_df)
     
@@ -108,7 +108,7 @@ def collect_top100(
     del query_cve_df_sub
     gc.collect()
     
-    ### kr: merge label back based on (desc_token, commit_id), the rest (i.e., commits not in the cve's 5,000 entries) will then be labled as 0 
+    ###  new: merge label back based on (desc_token, commit_id), the rest (i.e., commits not in the cve's 5,000 entries) will then be labled as 0 
     query_cve_df_sub = query_cve_df.drop(['desc_token'], axis=1)
     # now query_cve_df_sub has columns: cve, commit_id, label
     
@@ -197,8 +197,11 @@ def pid_qid_test_data():
     test_df.to_csv(os.path.join(BASE_DIR, 'test_data_pid_qid.csv'), index=False)
     
 
-### kr: group (cve, desc_token, commit_id, lable) by (owner, repo)
+###  new: group (cve, desc_token, commit_id, label) by (owner, repo)
 def split_data_by_repo():
+    '''
+    split data by repo, and save to QUERY_CVE_DIR
+    '''
     # output_dir = '/mnt/local/Baselines_Bugs/ColBERT/data/query_cve_data'
     os.makedirs(QUERY_CVE_DIR, exist_ok=True)
     

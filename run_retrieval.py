@@ -24,6 +24,7 @@ def run_index(collection_file, index_root, index_name):
                 "--amp", "--doc_maxlen", "512", "--mask-punctuation", "--bsize", "128",
                 "--checkpoint", "/mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn",
                 "--collection", collection_file,
+                "--similarity", "l2",
                 "--index_root", index_root, "--index_name", index_name,
                 "--root", "run/index_output", "--experiment", "commits_train"]
     # print("index_cmd: {}".format(index_cmd))
@@ -58,6 +59,7 @@ def run_faiss_index(index_root, index_name):
                 "--index_root", index_root, "--index_name", index_name,
                 "--sample", "0.3",
                 "--partitions", "70",
+                "--similarity", "l2",
                 "--root", "run/faiss_output",
                 "--experiment", "commits_train"]
     index_res = subprocess.run(index_faiss_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding='utf-8')
@@ -73,7 +75,7 @@ def run_faiss_index(index_root, index_name):
 
 
 
-def run_retrieval(queries_file, index_root, index_name, topk, retrieval_rankname):
+def run_retrieval(queries_file, index_root, index_name, topk):
     retrieval_cmd = ["python", "-m", "colbert.retrieve",
                         "--amp", "--doc_maxlen", "512", "--mask-punctuation", "--bsize", "128",
                         "--queries", queries_file,
@@ -81,9 +83,10 @@ def run_retrieval(queries_file, index_root, index_name, topk, retrieval_rankname
                         "--partitions", "70", 
                         # "--faiss_depth", "100", 
                         "--depth", topk, 
+                        "--similarity", "l2",
                         "--index_root", index_root, "--index_name", index_name,
                         "--checkpoint", "/mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn",
-                        "--root", "run/retrieve_output", "--experiment", index_name]
+                        "--root", "run/retrieve_output", "--experiment", "commits_train"]
 
     retrieval_res = subprocess.run(retrieval_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding='utf-8')
     # print(retrieval_res.stdout)

@@ -1,0 +1,244 @@
+2023-10-05 17:31:21,110 INFO indexing ARMmbed_mbedtls
+2023-10-05 17:31:57,558 INFO 2023/10/05 17:31:27 INFO mlflow.tracking.fluent: Experiment with name 'commits_train/index.py' does not exist. Creating a new experiment.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing ColBERT: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing ColBERT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing ColBERT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ColBERT were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['linear.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing ColBERT: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing ColBERT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing ColBERT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ColBERT were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['linear.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing ColBERT: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing ColBERT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing ColBERT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ColBERT were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['linear.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing ColBERT: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing ColBERT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing ColBERT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ColBERT were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['linear.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/kaixuan_cuda11/anaconda3/envs/colbert-v0.2/lib/python3.7/site-packages/torch/distributed/launch.py:186: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  FutureWarning,
+
+2023-10-05 17:31:57,558 INFO indexing faiss ARMmbed_mbedtls
+2023-10-05 17:31:59,603 INFO 
+2023-10-05 17:31:59,603 INFO usage: index_faiss.py [-h] [--root ROOT] [--experiment EXPERIMENT] [--run RUN]
+                      [--local_rank RANK] --index_root INDEX_ROOT --index_name
+                      INDEX_NAME [--partitions PARTITIONS] [--sample SAMPLE]
+                      [--slices SLICES]
+index_faiss.py: error: unrecognized arguments: --similarity l2
+
+2023-10-05 17:31:59,604 INFO retrieving ARMmbed_mbedtls
+2023-10-05 17:32:11,556 INFO 
+
+[Oct 05, 17:32:01] #> Creating directory /mnt/local/Baselines_Bugs/ColBERT/cve/retrieve_output/commits_train/retrieve.py/2023-10-05_17.32.01 
+
+
+
+
+[Oct 05, 17:32:01] #> Creating directory /mnt/local/Baselines_Bugs/ColBERT/cve/retrieve_output/commits_train/retrieve.py/2023-10-05_17.32.01/logs/ 
+
+
+[Oct 05, 17:32:01] {'root': 'cve/retrieve_output', 'experiment': 'commits_train', 'run': '2023-10-05_17.32.01', 'rank': -1, 'similarity': 'l2', 'dim': 128, 'query_maxlen': 32, 'doc_maxlen': 128, 'mask_punctuation': True, 'checkpoint': '/mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn', 'bsize': 128, 'amp': True, 'queries': '/mnt/local/Baselines_Bugs/ColBERT/data/cve_split/query_data/ARMmbed_mbedtls.tsv', 'collection': None, 'qrels': None, 'index_root': '/mnt/local/Baselines_Bugs/ColBERT/cve_index/ARMmbed_mbedtls', 'index_name': 'ARMmbed_mbedtls', 'partitions': 70, 'nprobe': 32, 'retrieve_only': False, 'faiss_name': None, 'faiss_depth': 1024, 'part_range': None, 'batch': False, 'depth': 100} 
+
+[Oct 05, 17:32:09] #> Loading model checkpoint.
+[Oct 05, 17:32:09] #> Loading checkpoint /mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn ..
+[Oct 05, 17:32:10] #> checkpoint['epoch'] = 0
+[Oct 05, 17:32:10] #> checkpoint['batch'] = 346000
+[Oct 05, 17:32:10] [WARNING] 	 Got checkpoint['arguments']['doc_maxlen'] != args.doc_maxlen (i.e., 512 != 128)
+{
+    "root": "commits_exp",
+    "experiment": "commits_train_cont",
+    "run": "test.l2",
+    "rank": 0,
+    "similarity": "l2",
+    "dim": 128,
+    "query_maxlen": 32,
+    "doc_maxlen": 512,
+    "mask_punctuation": true,
+    "resume": true,
+    "resume_optimizer": false,
+    "checkpoint": "commits_exp\/commits_train_cont\/checkpoints\/colbert-300000.dnn",
+    "lr": 3e-6,
+    "maxsteps": 400000,
+    "bsize": 64,
+    "accumsteps": 1,
+    "amp": true,
+    "triples": "data\/train_data.tsv",
+    "queries": null,
+    "collection": null
+}
+
+
+[Oct 05, 17:32:10] #> Loading the queries from /mnt/local/Baselines_Bugs/ColBERT/data/cve_split/query_data/ARMmbed_mbedtls.tsv ...
+[Oct 05, 17:32:10] Traceback (most recent call last):
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/utils/runs.py", line 70, in context
+    yield
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/retrieve.py", line 40, in main
+    args.queries = load_queries(args.queries)
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/evaluation/loaders.py", line 25, in load_queries
+    assert (qid not in queries), ("Query QID", qid, "is repeated!")
+AssertionError: ('Query QID', 0, 'is repeated!')
+
+ 
+
+
+
+2023-10-05 17:32:11,557 INFO 2023/10/05 17:32:01 INFO mlflow.tracking.fluent: Experiment with name 'commits_train/retrieve.py' does not exist. Creating a new experiment.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing ColBERT: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing ColBERT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing ColBERT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ColBERT were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['linear.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/home/kaixuan_cuda11/anaconda3/envs/colbert-v0.2/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/home/kaixuan_cuda11/anaconda3/envs/colbert-v0.2/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/retrieve.py", line 56, in <module>
+    main()
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/retrieve.py", line 40, in main
+    args.queries = load_queries(args.queries)
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/evaluation/loaders.py", line 25, in load_queries
+    assert (qid not in queries), ("Query QID", qid, "is repeated!")
+AssertionError: ('Query QID', 0, 'is repeated!')
+
+2023-10-05 17:32:11,558 INFO indexing AXDOOMER_doom-vanille
+2023-10-05 17:32:32,812 INFO Some weights of the model checkpoint at bert-base-uncased were not used when initializing ColBERT: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing ColBERT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing ColBERT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ColBERT were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['linear.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing ColBERT: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing ColBERT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing ColBERT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ColBERT were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['linear.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing ColBERT: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing ColBERT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing ColBERT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ColBERT were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['linear.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing ColBERT: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing ColBERT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing ColBERT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ColBERT were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['linear.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/kaixuan_cuda11/anaconda3/envs/colbert-v0.2/lib/python3.7/site-packages/torch/distributed/launch.py:186: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  FutureWarning,
+
+2023-10-05 17:32:32,812 INFO indexing faiss AXDOOMER_doom-vanille
+2023-10-05 17:32:34,811 INFO 
+2023-10-05 17:32:34,812 INFO usage: index_faiss.py [-h] [--root ROOT] [--experiment EXPERIMENT] [--run RUN]
+                      [--local_rank RANK] --index_root INDEX_ROOT --index_name
+                      INDEX_NAME [--partitions PARTITIONS] [--sample SAMPLE]
+                      [--slices SLICES]
+index_faiss.py: error: unrecognized arguments: --similarity l2
+
+2023-10-05 17:32:34,812 INFO retrieving AXDOOMER_doom-vanille
+2023-10-05 17:32:48,870 INFO 
+
+[Oct 05, 17:32:36] #> Creating directory /mnt/local/Baselines_Bugs/ColBERT/cve/retrieve_output/commits_train/retrieve.py/2023-10-05_17.32.36 
+
+
+
+
+[Oct 05, 17:32:37] #> Creating directory /mnt/local/Baselines_Bugs/ColBERT/cve/retrieve_output/commits_train/retrieve.py/2023-10-05_17.32.36/logs/ 
+
+
+[Oct 05, 17:32:37] {'root': 'cve/retrieve_output', 'experiment': 'commits_train', 'run': '2023-10-05_17.32.36', 'rank': -1, 'similarity': 'l2', 'dim': 128, 'query_maxlen': 32, 'doc_maxlen': 128, 'mask_punctuation': True, 'checkpoint': '/mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn', 'bsize': 128, 'amp': True, 'queries': '/mnt/local/Baselines_Bugs/ColBERT/data/cve_split/query_data/AXDOOMER_doom-vanille.tsv', 'collection': None, 'qrels': None, 'index_root': '/mnt/local/Baselines_Bugs/ColBERT/cve_index/AXDOOMER_doom-vanille', 'index_name': 'AXDOOMER_doom-vanille', 'partitions': 70, 'nprobe': 32, 'retrieve_only': False, 'faiss_name': None, 'faiss_depth': 1024, 'part_range': None, 'batch': False, 'depth': 100} 
+
+[Oct 05, 17:32:44] #> Loading model checkpoint.
+[Oct 05, 17:32:44] #> Loading checkpoint /mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn ..
+[Oct 05, 17:32:46] #> checkpoint['epoch'] = 0
+[Oct 05, 17:32:46] #> checkpoint['batch'] = 346000
+[Oct 05, 17:32:46] [WARNING] 	 Got checkpoint['arguments']['doc_maxlen'] != args.doc_maxlen (i.e., 512 != 128)
+{
+    "root": "commits_exp",
+    "experiment": "commits_train_cont",
+    "run": "test.l2",
+    "rank": 0,
+    "similarity": "l2",
+    "dim": 128,
+    "query_maxlen": 32,
+    "doc_maxlen": 512,
+    "mask_punctuation": true,
+    "resume": true,
+    "resume_optimizer": false,
+    "checkpoint": "commits_exp\/commits_train_cont\/checkpoints\/colbert-300000.dnn",
+    "lr": 3e-6,
+    "maxsteps": 400000,
+    "bsize": 64,
+    "accumsteps": 1,
+    "amp": true,
+    "triples": "data\/train_data.tsv",
+    "queries": null,
+    "collection": null
+}
+
+
+[Oct 05, 17:32:46] #> Loading the queries from /mnt/local/Baselines_Bugs/ColBERT/data/cve_split/query_data/AXDOOMER_doom-vanille.tsv ...
+[Oct 05, 17:32:46] #> Got 1 queries. All QIDs are unique.
+
+[Oct 05, 17:32:48] #> Loading the FAISS index from /mnt/local/Baselines_Bugs/ColBERT/cve_index/AXDOOMER_doom-vanille/AXDOOMER_doom-vanille/ivfpq.70.faiss ..
+[Oct 05, 17:32:48] Traceback (most recent call last):
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/utils/runs.py", line 70, in context
+    yield
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/retrieve.py", line 52, in main
+    retrieve(args)
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/ranking/retrieval.py", line 19, in retrieve
+    ranker = Ranker(args, inference, faiss_depth=args.faiss_depth)
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/ranking/rankers.py", line 16, in __init__
+    self.faiss_index = FaissIndex(args.index_path, args.faiss_index_path, args.nprobe, part_range=args.part_range)
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/ranking/faiss_index.py", line 30, in __init__
+    self.faiss_index = faiss.read_index(faiss_index_path)
+  File "/home/kaixuan_cuda11/anaconda3/envs/colbert-v0.2/lib/python3.7/site-packages/faiss/swigfaiss.py", line 5660, in read_index
+    return _swigfaiss.read_index(*args)
+RuntimeError: Error in faiss::FileIOReader::FileIOReader(const char*) at /home/conda/feedstock_root/build_artifacts/faiss-split_1618468141526/work/faiss/impl/io.cpp:82: Error: 'f' failed: could not open /mnt/local/Baselines_Bugs/ColBERT/cve_index/AXDOOMER_doom-vanille/AXDOOMER_doom-vanille/ivfpq.70.faiss for reading: No such file or directory
+
+ 
+
+
+
+2023-10-05 17:32:48,870 INFO Some weights of the model checkpoint at bert-base-uncased were not used when initializing ColBERT: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing ColBERT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing ColBERT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ColBERT were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['linear.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/home/kaixuan_cuda11/anaconda3/envs/colbert-v0.2/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/home/kaixuan_cuda11/anaconda3/envs/colbert-v0.2/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/retrieve.py", line 56, in <module>
+    main()
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/retrieve.py", line 52, in main
+    retrieve(args)
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/ranking/retrieval.py", line 19, in retrieve
+    ranker = Ranker(args, inference, faiss_depth=args.faiss_depth)
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/ranking/rankers.py", line 16, in __init__
+    self.faiss_index = FaissIndex(args.index_path, args.faiss_index_path, args.nprobe, part_range=args.part_range)
+  File "/mnt/local/Baselines_Bugs/ColBERT/colbert/ranking/faiss_index.py", line 30, in __init__
+    self.faiss_index = faiss.read_index(faiss_index_path)
+  File "/home/kaixuan_cuda11/anaconda3/envs/colbert-v0.2/lib/python3.7/site-packages/faiss/swigfaiss.py", line 5660, in read_index
+    return _swigfaiss.read_index(*args)
+RuntimeError: Error in faiss::FileIOReader::FileIOReader(const char*) at /home/conda/feedstock_root/build_artifacts/faiss-split_1618468141526/work/faiss/impl/io.cpp:82: Error: 'f' failed: could not open /mnt/local/Baselines_Bugs/ColBERT/cve_index/AXDOOMER_doom-vanille/AXDOOMER_doom-vanille/ivfpq.70.faiss for reading: No such file or directory
+
+2023-10-05 17:32:48,871 INFO indexing AcademySoftwareFoundation_openexr

@@ -6,7 +6,7 @@ run/
 run_index/
 mlruns/
 retrieve_output/
-
+data/cve_split/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
