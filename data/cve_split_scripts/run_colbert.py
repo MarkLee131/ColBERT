@@ -69,8 +69,8 @@ def run_retrieval(queries_file, index_root, index_name, topk):
                         "--similarity", "l2",
                         "--index_root", index_root, "--index_name", index_name,
                         "--checkpoint", "/mnt/local/Baselines_Bugs/ColBERT/commits_exp/commits_train/train.py/test.l2/checkpoints/colbert.dnn",
-                        "--root", "cve/retrieve_output", "--experiment", "commits_train"]
-
+                        "--root", "cve/retrieve_output", "--experiment", index_name]
+    ### !!!caution!!!: experiment name should be the same as index_name, otherwise the retrieval result will be saved into a folder named timestamp.
     retrieval_res = subprocess.run(retrieval_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding='utf-8')
     # print(retrieval_res.stdout)
     logging.info(retrieval_res.stdout)

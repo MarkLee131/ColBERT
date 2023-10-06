@@ -72,8 +72,8 @@ def split_cve(filepath:str):
         # group.to_csv(os.path.join(QUERY_DIR, f'{owner}_{repo}.csv'), index=False)
         # save to tsv
         if os.path.exists(os.path.join(QUERY_DIR, f'{owner}_{repo}.tsv')):
-            # we append to the existing file, and set the qid from the last one
-            group['qid'] = group['qid'] + pd.read_csv(os.path.join(QUERY_DIR, f'{owner}_{repo}.tsv'), sep='\t', header=None, usecols=[0])['qid'].max() + 1
+            # we append to the existing file, and set the qid from the last one: which is the row number of the last one (since from 0)
+            group['qid'] = group['qid'] + pd.read_csv(os.path.join(QUERY_DIR, f'{owner}_{repo}.tsv'), sep='\t', header=None).shape[0]
             group.to_csv(os.path.join(QUERY_DIR, f'{owner}_{repo}.tsv'), sep='\t', index=False, header=False, mode='a', encoding='utf-8')
         else:
             # we create a new file
