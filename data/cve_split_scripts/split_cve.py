@@ -53,7 +53,7 @@ def sample_collections_all(dir:str='/mnt/local/Baselines_Bugs/ColBERT/data/repo_
     for filename in tqdm(os.listdir(dir)):
         if filename.endswith('.csv'):
             filepath = os.path.join(dir, filename)
-            owner, repo = filename.split('.')[0].split('_', 1)
+            owner, repo = filename.rsplit('.')[0].split('_', 1) ## we use rsplit since some names have . in the name
             sample_collections(filepath, owner, repo)
 
 from utils import reduce_mem_usage

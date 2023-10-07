@@ -92,7 +92,7 @@ class _RunManager():
             original_name = str(self.original_name)
             name = str(self.name)
 
-            self.log_new_artifact(os.path.join(self._logger.logs_path, 'elapsed.txt'), total_seconds)
+            # self.log_new_artifact(os.path.join(self._logger.logs_path, 'elapsed.txt'), total_seconds)
             self.log_new_artifact(os.path.join(self._logger.logs_path, 'name.original.txt'), original_name)
             self.log_new_artifact(os.path.join(self._logger.logs_path, 'name.txt'), name)
 
