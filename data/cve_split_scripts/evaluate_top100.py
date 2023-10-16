@@ -12,26 +12,32 @@ def calculate_metrics():
     '''
     ranks = []
     cves = 0
-    queries = 0
+    # queries = 0
     
     for file in os.listdir(TOP100_DIR):
         if file.endswith('.csv'):
             df = pd.read_csv(os.path.join(TOP100_DIR, file))
+            tmp_cve = df['cve'].nunique()
+            tmp_queries = df['qid'].nunique()
+            # if tmp_cve != tmp_queries:
+            #     print('cve != queries: ', file, tmp_cve, tmp_queries)
+                
             cves += df['cve'].nunique()
-            queries += df['qid'].nunique()
+            # queries += df['qid'].nunique()
+            
             patch_df = df[df['label']==1]
             ### we need to collect the ranks of the patches
             
-            for qid in df['qid'].unique():
-                if qid in patch_df['qid'].unique():
+            for cve in df['cve'].unique():
+                if cve in patch_df['cve'].unique():
                     ### we need the min rank of the patches for a CVE
-                    ranks.append(min(patch_df[patch_df['qid']==qid]['rank']))
+                    ranks.append(min(patch_df[patch_df['cve']==cve]['rank']))
                 else:
                     ranks.append(0)
 
                         
     print('Number of CVEs: ', cves)
-    print('Number of queries: ', queries)
+    # print('Number of queries: ', queries)
     print('Number of patches: ', len(ranks))
 
     
@@ -93,25 +99,27 @@ def split_data():
     validate_df = pd.read_csv('/mnt/local/Baselines_Bugs/ColBERT/data/validate_data.csv')
     # train_df = pd.read_csv('/mnt/local/Baselines_Bugs/ColBERT/data/train_data.csv')
     validate_cves = validate_df['cve'].unique()
-    validate_tuples = validate_df[['cve', 'owner', 'repo']].drop_duplicates()
+    # validate_tuples = validate_df[['cve', 'owner', 'repo']].drop_duplicates()
     
     test_cves = test_df['cve'].unique()
-    test_tuples = test_df[['cve', 'owner', 'repo']].drop_duplicates()
+    # test_tuples = test_df[['cve', 'owner', 'repo']].drop_duplicates()
     
-    print('Number of validate CVEs: ', len(validate_cves))
-    print('Number of test CVEs: ', len(test_cves))
+    # print('Number of validate CVEs: ', len(validate_cves))
+    # print('Number of test CVEs: ', len(test_cves))
     
     for file in os.listdir(TOP100_DIR):
         if file.endswith('.csv'):
             df = pd.read_csv(os.path.join(TOP100_DIR, file))
             ### check the cve in df, and determine which set it belongs to
-            df_cves = df.groupby(['cve', 'owner', 'repo'])
-            for (cve, owner, repo), group in df_cves:
-                # if cve in validate_cves:
-                if (cve, owner, repo) in validate_tuples.values:
+            # df_cves = df.groupby(['cve', 'owner', 'repo'])
+            df_cves = df.groupby('cve')
+            # for (cve, owner, repo), group in df_cves:
+            for cve, group in df_cves:
+                if cve in validate_cves:
+                # if (cve, owner, repo) in validate_tuples.values:
                     validate_top100 = validate_top100.append(group, ignore_index=True)
-                # elif cve in test_cves:
-                elif (cve, owner, repo) in test_tuples.values:
+                elif cve in test_cves:
+                # elif (cve, owner, repo) in test_tuples.values:
                     test_top100 = test_top100.append(group, ignore_index=True)
                 else:
                     train_top100 = train_top100.append(group, ignore_index=True)
@@ -134,12 +142,13 @@ def compute_metrics(df, k_values):
     mrrs = []
     manual_efforts = {k: [] for k in k_values}
 
-    # grouped = df.groupby('qid')
-    # print(len(grouped))
-    grouped = df.groupby(['cve', 'owner', 'repo'])
+    grouped = df.groupby('cve')
+    print(len(grouped))
+    # grouped = df.groupby(['cve', 'owner', 'repo'])
     print(len(grouped))
 
-    for (cve, owner, repo), group in grouped:
+    # for (cve, owner, repo), group in grouped:
+    for cve, group in grouped:
         group_sorted = group.sort_values(by='rank')
         positive_ranks = group_sorted[group_sorted['label'] == 1]['rank'].tolist()
 

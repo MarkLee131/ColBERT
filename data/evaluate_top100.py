@@ -1,7 +1,8 @@
 import os
 import pandas as pd
 
-TOP100_DIR = '/mnt/local/Baselines_Bugs/ColBERT/data/top100'
+# TOP100_DIR = '/mnt/local/Baselines_Bugs/ColBERT/data/top100'
+TOP100_DIR = '/mnt/local/Baselines_Bugs/ColBERT/data/cve_split/top100_data'
 TOP100_SPLIT_DIR = '/mnt/local/Baselines_Bugs/ColBERT/data/top100_split'
 
 
@@ -99,6 +100,7 @@ def split_data():
     for file in os.listdir(TOP100_DIR):
         if file.endswith('.csv'):
             df = pd.read_csv(os.path.join(TOP100_DIR, file))
+            # df = df.drop_duplicates(['pid', 'rank', 'desc_token', 'commits', 'owner', 'repo', 'commit_id', 'cve', 'label'])
             ### check the cve in df, and determine which set it belongs to
             df_cves = df.groupby('cve')
             for cve, group in df_cves:
@@ -116,6 +118,20 @@ def split_data():
 
 
     ### save to csv files
+    ## we found that some qids are duplicated in the train_top100, so we need to remove the duplicates
+    
+    print('Number of train rows before removing duplicates: ', len(train_top100))
+    train_top100 = train_top100.drop_duplicates(['pid', 'rank', 'desc_token', 'commits', 'owner', 'repo', 'commit_id', 'cve', 'label'])
+    print('Number of train rows after removing duplicates: ', len(train_top100))
+
+    print('Number of validate rows before removing duplicates: ', len(validate_top100))
+    validate_top100 = validate_top100.drop_duplicates(['pid', 'rank', 'desc_token', 'commits', 'owner', 'repo', 'commit_id', 'cve', 'label'])
+    print('Number of validate rows after removing duplicates: ', len(validate_top100))
+    
+    print('Number of test rows before removing duplicates: ', len(test_top100))
+    test_top100 = test_top100.drop_duplicates(['pid', 'rank', 'desc_token', 'commits', 'owner', 'repo', 'commit_id', 'cve', 'label'])
+    print('Number of test rows after removing duplicates: ', len(test_top100))
+    
     train_top100.to_csv(os.path.join(TOP100_SPLIT_DIR, 'train_top100.csv'), index=False)
     validate_top100.to_csv(os.path.join(TOP100_SPLIT_DIR, 'validate_top100.csv'), index=False)
     test_top100.to_csv(os.path.join(TOP100_SPLIT_DIR, 'test_top100.csv'), index=False)
@@ -128,7 +144,7 @@ def compute_metrics(df, k_values):
     # grouped = df.groupby('qid')
     # print(len(grouped))
     grouped = df.groupby('cve')
-    print(len(grouped))
+    # print(len(grouped))
 
     for qid, group in grouped:
         group_sorted = group.sort_values(by='rank')
@@ -171,11 +187,11 @@ def evaluate_test_data(data_path, output_path):
     return avg_recalls, avg_mrr, avg_manual_efforts
 
 if __name__ == '__main__':
+    
     # calculate_metrics()
-    # split_data()
-    # Usage:
-    data_path = "/mnt/local/Baselines_Bugs/ColBERT/data/top100_split/test_top100.csv"
-    # data_path = "/mnt/local/Baselines_Bugs/PatchSleuth/metrics/CR_1004/rank_info_final_model.csv"
-    output_path = "testdata_results_colbert.csv"
+    
+    split_data()
+    data_path = "/mnt/local/Baselines_Bugs/ColBERT/data/cve_split/top100_split/test_top100.csv"
+    output_path = "testdata_results_colbert_1007.csv"
     results = evaluate_test_data(data_path, output_path)
     print(results)
